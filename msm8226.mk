@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true \
-    persist.sys.usb.config=adb
+    persist.sys.usb.config=mtp,adb
 
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
