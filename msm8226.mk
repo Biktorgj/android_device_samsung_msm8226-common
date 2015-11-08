@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Keystore
 PRODUCT_PACKAGES += \
-    keystore.msm8226
+#    keystore.msm8226
 
 # Media
 PRODUCT_COPY_FILES += \
