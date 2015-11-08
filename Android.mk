@@ -21,9 +21,8 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 MODEM_IMAGES := \
     modem.b00 modem.b01 modem.b02 modem.b03 modem.b04 modem.b05 modem.b06 \
-    modem.b08 modem.b09 modem.b10 modem.b11 modem.b12 modem.b13 modem.b14 \
-    modem.b15 modem.b16 modem.b17 modem.b18 modem.b19 modem.b20 modem.b21 \
-    modem.b22 modem.b23 modem.b24 modem.b25 modem.b26 modem.b27 modem.mdt
+    modem.b09 modem.b16 modem.b17 modem.b18 modem.b19 modem.b20 modem.b21 \
+    modem.b22 modem.b23 modem.b24 modem.b27 modem.b28 modem.b29 modem.mdt
 
 MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MODEM_IMAGES)))
 $(MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -49,7 +48,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(MBA_SYMLINKS)
 
 ADSP_IMAGES := \
     adsp.b00 adsp.b01 adsp.b02 adsp.b03 adsp.b04 adsp.b05 adsp.b06 \
-    adsp.b08 adsp.b09 adsp.b10 adsp.b11 adsp.b12 adsp.b13 adsp.mdt
+    adsp.b08 adsp.b09 adsp.mdt
 
 ADSP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ADSP_IMAGES)))
 $(ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
